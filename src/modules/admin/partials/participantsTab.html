@@ -1,7 +1,7 @@
 <section layout="row" flex>
     <md-content flex layout-padding>
         <md-input-container>
-            <label>Poet wählen</label>
+            <label> Slammer wählen</label>
             <md-select ng-model="event.view.participantId" style="width:200px;">
                 <md-option ng-if="getGroup().sacrifice" value="{{getGroup().sacrifice.id}}">OPFERLAMM, {{
                     (getGroup().sacrifice.id | participantOfId).name }}, {{ (getGroup().sacrifice.id
@@ -32,7 +32,7 @@
                     ng-disabled="!event.view.participantId"
                     ng-click="setScreen('participant', 'name')"
                     ng-class="{'md-primary': event.view.phase == 'name' && event.view.bgVideo != 'pause'}">
-                1. Poet anzeigen
+                1. Slammer anzeigen
             </md-button>
             <md-button
                     ng-disabled="!event.view.participantId"
