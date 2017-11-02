@@ -1,7 +1,7 @@
 <div class="md-whiteframe-z2">
     <md-toolbar class="md-secondary">
         <div class="md-toolbar-tools">
-            <h3 class="ng-binding">Poeten</h3>
+            <h3 class="ng-binding">Slammer</h3>
             <span flex></span>
 
             <md-button class="md-accent" ng-click="addEntry()">hinzufügen</md-button>
@@ -10,7 +10,7 @@
 
     <md-list>
         <md-subheader ng-show="entries" class="md-no-sticky">{{entries.length}}
-            <ng-pluralize count="entries.length" when="{1: 'Poet', 'other' :'Poeten'}"></ng-pluralize>
+            <ng-pluralize count="entries.length" when="{1: 'Slammer', 'other' :'Slammer'}"></ng-pluralize>
         </md-subheader>
 
         <md-list-item class="md-2-line md-no-proxy" ng-repeat="entry in entries">
