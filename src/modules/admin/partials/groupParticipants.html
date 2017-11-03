@@ -7,7 +7,7 @@
             <md-button class="md-accent" aria-label="Opferlamm" ng-click="addSacrifice()" ng-disabled="group.sacrifice"> + Opferlamm
                 </md-button>
                  <md-button class="md-accent" aria-label="Poet" ng-click="addParticipant()">+ Poet
-            <md-button class="md-accent" aria-label="Slammer" ng-click="addParticipant()">
+            <md-button class="md-accent" aria-label="Poet" ng-click="addParticipant()">
                 + Slammer
             </md-button>
         </div>
@@ -16,7 +16,7 @@
     <md-list style="padding-bottom: 0">
         <md-subheader ng-show="group.participants && group.participants.length > 0" class="md-no-sticky">
             {{group.participants.length}}
-            <ng-pluralize count="group.participants.length" when="{1: 'Slammer', 'other' :'Slammer'}"></ng-pluralize>
+            <ng-pluralize count="group.participants.length" when="{1: 'Poet', 'other' :'Poeten'}"></ng-pluralize>
             <span ng-show="group.sacrifice && group.sacrifice.id">+ Opferlamm</span>
         </md-subheader>
 
